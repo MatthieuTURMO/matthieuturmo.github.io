@@ -33,6 +33,7 @@ div.image-background .caption {
 
 div.image-background .caption span {
     background-color: grey;
+    opacity : 0.8;
     text-transform: uppercase;
     letter-spacing: 10px;
     border-radius: 2px;

@@ -3,6 +3,7 @@
     background-color: #b2b2b2;
     width : 80%;
     margin : 10px auto;
+    border-radius: 3px;
 }
 
 .navbar-collapse>ul {
