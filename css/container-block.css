@@ -1,0 +1,18 @@
+.presentation-generale {
+    background-color : white;
+    border : 1px solid grey;
+}
+
+.presentation-generale .title{
+    font-size : 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color : grey;
+}
+
+.presentation-generale .divider{
+    height : 1px;
+    background-color: grey;
+    width : 80%;
+    margin : 5px auto;
+}

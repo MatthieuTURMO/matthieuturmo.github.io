@@ -1,0 +1,16 @@
+
+.navbar {
+    background-color: #b2b2b2;
+    width : 80%;
+    margin : 10px auto;
+}
+
+.navbar-collapse>ul {
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar-collapse>ul>li {
+    margin: 0 100px;
+}
