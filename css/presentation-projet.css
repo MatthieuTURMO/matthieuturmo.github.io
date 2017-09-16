@@ -1,0 +1,20 @@
+.presentation-projet {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.presentation-projet .title {
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.presentation-projet .divider {
+    height: 1px;
+    background-color: grey;
+    width: 30%;
+    margin: 5px auto;
+    margin-bottom: 20px;
+}

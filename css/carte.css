@@ -1,0 +1,14 @@
+.card {
+    margin : 10px auto;
+    border: 1px solid grey;
+}
+
+.card-block{
+    padding : 20px;
+    
+}
+
+
+.card-title {
+    margin-top : 10px;
+}
