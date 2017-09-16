@@ -5,8 +5,10 @@ $(document).scroll(function () {
     if(windowHeight <= scrollTopLevel){
         console.log("MDR");
         $('.navbar').addClass('fixed-top');
+        $('.transparent-replace').removeClass('hidden');
     }
     else {
         $('.navbar').removeClass('fixed-top');
+        $('.transparent-replace').addClass('hidden');
     }
 })

@@ -1,9 +1,8 @@
-
 .navbar {
     background-color: #b2b2b2;
-    width : 80%;
-    margin : 0 auto;
-    margin-bottom : 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
     border-radius: 3px;
 }
 
@@ -15,4 +14,14 @@
 
 .navbar-collapse>ul>li {
     margin: 0 100px;
+}
+
+.transparent-replace {
+    display: block;
+    height: 64px;
+    background-color: white;
+}
+
+.transparent-replace.hidden {
+    display: none;
 }
