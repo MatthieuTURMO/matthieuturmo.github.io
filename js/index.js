@@ -4,7 +4,7 @@ $(document).scroll(function () {
     var scrollTopLevel = $(document).scrollTop();
     // quand on scroll plus que 100%, la navbar devient fixe
     // et on affiche la div de remplacement pour aucun décalage
-    opacityImageBackground(windowHeight, scrollTopLevel);
+    opacityImageBackground('.image-background', windowHeight, scrollTopLevel);
     if (windowHeight <= scrollTopLevel) {
         $('.navbar').addClass('fixed-top');
         $('.transparent-replace').removeClass('hidden');
@@ -15,29 +15,22 @@ $(document).scroll(function () {
 });
 
 // fonction qui scroll jusqu'à la barre de navigation
-$(document).ready(function () {
-    $('#start').on('click', function () { // Au clic sur un élément
-        var page = $(this).attr('href'); // Page cible
-        var speed = 750; // Durée de l'animation (en ms)
-        $('html, body').animate({
-            scrollTop: $(page).offset().top
-        }, speed); // Go
-        return false;
-    });
+$('#start').on('click', function () {
+    var page = $(this).attr('href');
+    var speed = 1000;
+    $('html, body').animate({
+        scrollTop: $(page).offset().top
+    }, speed, "easeOutQuart");
+    return false;
 });
 
 // en fonction du niveau de scroll, l'opacité de l'image du début change
 // lorsque l'on a scroll a plus de 100%, l'opacité est à 0, quand on est au top
 // l'opacité est à 1
-function opacityImageBackground(windowHeight, scrollTopLevel) {
+function opacityImageBackground(selector, windowHeight, scrollTopLevel) {
     var opacity = 1 - scrollTopLevel / windowHeight;
     if (opacity <= 0) {
         opacity = 0;
     }
-    console.log(opacity);
-    $('.image-background').css('opacity',opacity);
+    $(selector).css('opacity', opacity);
 }
-
-
-
-// function : animer
