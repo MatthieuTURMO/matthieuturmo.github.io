@@ -1,42 +1,32 @@
-.presentation-about{
+.presentation-about {
     background-color: #21374B;
-    padding : 50px 0;
-    width : 100%;
+    padding: 50px 0;
+    width: 100%;
 }
 
-.presentation-about .title{
-    font-size: 50px;
-    letter-spacing: 3px;
+.presentation-about .title {
     color: white;
-    font-weight: bold;
-    margin-top : 50px;
 }
-
 
 .presentation-about .divider {
-    height: 5px;
     background-color: #396783;
-    width: 15%;
-    margin: 5px auto;
-    margin-bottom: 50px;
 }
 
-
-.presentation-about .image-profil{
+.presentation-about .image-profil {
     background: url('../images/lol.jpg') no-repeat;
-    width : 200px;
-    height : 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 200px;
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
-.presentation-about .text-profil{
+.presentation-about .text-profil {
     color: white;
     text-align: left;
-    margin : auto 0;
+    margin: auto 0;
 }
 
-.presentation-about a.see-all{
+.presentation-about a.see-all {
     background-color: white;
     color: #B9B9B9;
 }

@@ -5,19 +5,11 @@
 }
 
 .presentation-contact .title {
-    font-size: 50px;
-    letter-spacing: 3px;
     color: white;
-    font-weight: bold;
-    margin-top : 50px;
 }
 
 .presentation-contact .divider {
-    height: 5px;
     background-color: white;
-    width: 15%;
-    margin: 5px auto;
-    margin-bottom: 50px;
 }
 
 .presentation-contact a.see-all{

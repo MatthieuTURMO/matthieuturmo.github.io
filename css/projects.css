@@ -1,0 +1,101 @@
+.title {
+    color: #666666;
+    margin-top: 100px;
+}
+
+.divider {
+    background-color: #4A89AA;
+}
+
+.text-presentation {
+    padding: 0 100px;
+    margin-bottom: 50px;
+}
+
+.projets {
+    height: fit-content;
+    width: 100%;
+}
+
+.projet {
+    height: 100%;
+    padding: 0 5%;
+}
+
+.projet table {
+    width: 100%;
+}
+
+.projet table tr {
+    width: 50%;
+}
+
+.projet table tr td img {
+    width: 100%;
+    margin-top : -1px;
+    margin-bottom: -1px;
+}
+
+.projet:nth-child(odd) table tr td:nth-child(1) {
+    width: 40%;
+}
+
+.projet:nth-child(odd) table tr td:nth-child(2) {
+    width: 60%;
+}
+
+.projet:nth-child(even) table tr td:nth-child(1) {
+    width: 60%;
+    text-align: right;
+}
+
+projet:nth-child(even) table tr td:nth-child(2) {
+    width: 40%;
+}
+
+.projet:nth-child(3n+3) {
+    background-color: #4A89AA;
+    color: white;
+}
+
+.projet:nth-child(3n+1) {
+    background-color: #21374B;
+    color: white;
+}
+
+.projet:nth-child(3n+2) {
+    background-color: #BE4248;
+}
+
+.projet .text-projet{
+    padding : 20px;
+}
+
+.text-projet .titre-projet {
+    font-size : 2em;
+    color : grey;
+    font-weight: bold;
+}
+
+.text-projet .tags .tag{
+    display: inline-block;
+    background-color : white;
+    color : black;
+    border-radius: 5px;
+    margin : 5px 2px;
+    padding : 0 10px;
+}
+
+.text-projet .description{
+    color : grey;
+    font-size : 1.2em;
+    font-style: italic;
+    margin : 20px 0;
+}
+
+.text-projet a.see-more{
+    background-color: transparent;
+    border : 2px solid white;
+    color : white;
+    padding : 5px;
+}

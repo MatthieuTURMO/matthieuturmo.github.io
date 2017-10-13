@@ -42,6 +42,21 @@ div.image-background .caption #start {
     padding: 15px;
 }
 
+.title{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin : 0 auto;
+    margin-top : 50px;
+}
+
+.divider{
+    height: 5px;
+    width: 15%;
+    margin: 5px auto;
+    margin-bottom: 50px;
+}
+
 a.see-all{
     padding : 15px 70px;
     margin : 20px auto;
