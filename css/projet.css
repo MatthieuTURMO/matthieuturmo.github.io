@@ -1,0 +1,86 @@
+.description-projet {
+    padding: 100px 20%;
+    width: 100%;
+    background-color: #21374B;
+    color: white;
+}
+
+.goal {
+    margin: 50px 0;
+    width: 100%;
+    background-color: white;
+}
+
+.goal .titre-goal {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #666666;
+    position: relative;
+}
+
+.goal .titre-goal:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    background-color: #B84045;
+    top: 50%;
+    bottom: 50%;
+    left: -100px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.images {
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+}
+
+.boutons {
+    width: 100%;
+}
+
+.boutons {
+    color: white;
+}
+
+.boutons .row .col {
+    padding: 30px;
+    position: relative;
+}
+
+.boutons .row .col .chevron {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size : 4em;
+    cursor: pointer;
+}
+
+.boutons>.row>.col:nth-child(odd) .chevron{
+    left : 50px;
+}
+
+.boutons>.row>.col:nth-child(even) .chevron{
+    right : 50px;
+}
+
+.boutons>.row>.col:nth-child(odd) {
+    background-color: #B84045;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.boutons>.row>.col:nth-child(even) {
+    background-color: #4A89AA;
+    text-align: right;
+    padding-right: 150px;
+}

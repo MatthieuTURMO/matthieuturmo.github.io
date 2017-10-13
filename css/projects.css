@@ -1,6 +1,7 @@
 .title {
     color: #666666;
     margin-top: 100px;
+    text-align: center;
 }
 
 .divider {
@@ -32,7 +33,7 @@
 
 .projet table tr td img {
     width: 100%;
-    margin-top : -1px;
+    margin-top: -1px;
     margin-bottom: -1px;
 }
 
@@ -67,35 +68,35 @@ projet:nth-child(even) table tr td:nth-child(2) {
     background-color: #BE4248;
 }
 
-.projet .text-projet{
-    padding : 20px;
+.projet .text-projet {
+    padding: 20px;
 }
 
 .text-projet .titre-projet {
-    font-size : 2em;
-    color : grey;
+    font-size: 2em;
+    color: grey;
     font-weight: bold;
 }
 
-.text-projet .tags .tag{
+.text-projet .tags .tag {
     display: inline-block;
-    background-color : white;
-    color : black;
+    background-color: white;
+    color: black;
     border-radius: 5px;
-    margin : 5px 2px;
-    padding : 0 10px;
+    margin: 5px 2px;
+    padding: 0 10px;
 }
 
-.text-projet .description{
-    color : grey;
-    font-size : 1.2em;
+.text-projet .description {
+    color: grey;
+    font-size: 1.2em;
     font-style: italic;
-    margin : 20px 0;
+    margin: 20px 0;
 }
 
-.text-projet a.see-more{
+.text-projet a.see-more {
     background-color: transparent;
-    border : 2px solid white;
-    color : white;
-    padding : 5px;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
 }
