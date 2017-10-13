@@ -1,0 +1,36 @@
+.presentation-contact {
+    background-color: #BE4248;
+    padding : 50px 0;
+    width : 100%;
+}
+
+.presentation-contact .title {
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: bold;
+    margin-top : 50px;
+}
+
+.presentation-contact .divider {
+    height: 5px;
+    background-color: white;
+    width: 15%;
+    margin: 5px auto;
+    margin-bottom: 50px;
+}
+
+.presentation-contact a.see-all{
+    background-color: #4A89AA;
+    color: white;
+}
+
+.presentation-contact .text-contact {
+    color : white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.presentation-contact .text-contact a{
+    color:grey;
+}

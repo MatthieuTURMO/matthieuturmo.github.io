@@ -32,12 +32,18 @@ div.image-background .caption {
     color: white;
 }
 
-div.image-background .caption span {
+div.image-background .caption #start {
     background-color: grey;
     opacity : 0.8;
+    margin-right : 0;
     text-transform: uppercase;
-    letter-spacing: 10px;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 50px;
     padding: 15px;
+}
+
+a.see-all{
+    padding : 15px 70px;
+    margin : 20px auto;
+    font-size: 1.5em;
 }
