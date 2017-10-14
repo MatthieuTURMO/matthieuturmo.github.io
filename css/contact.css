@@ -13,24 +13,23 @@
 }
 
 .social {
-    margin : 50px 0;
+    margin: 50px 0;
     width: 100%;
     text-align: center;
 }
 
 .social>.container-fluid>.row div {
     color: white;
-    text-align:center;
+    text-align: center;
     font-weight: bold;
 }
 
-.social>.container-fluid>.row > div{
-    padding : 20px;
+.social>.container-fluid>.row>div {
+    padding: 20px;
 }
 
-
 .social>.container-fluid>.row>div img,
-.social>.container-fluid>.row>div span  {
+.social>.container-fluid>.row>div span {
     margin: 0 auto;
 }
 
@@ -46,7 +45,7 @@
     background-color: #4A89AA;
 }
 
-.form-contact{
+.form-contact {
     min-height: 100vh;
     height: 100vh;
     background: url('../images/background1.jpeg') no-repeat;
@@ -56,28 +55,58 @@
     background-attachment: fixed;
     width: 100%;
     position: relative;
-    padding : 90px;
+    padding-top : 50px;
+}
 
+.form-contact .row {
+    margin-bottom: 10px;
+}
+
+.form-contact input {
+    width: 80%;
+    height: 60px;
+    padding: 5px;
+    margin-bottom: 30px;
 }
 
 
-.form-contact .row{
-    text-align:center;
-    margin-bottom : 10px;
+/* le premier input qui corrspond au nom */
+
+.form-contact .container>.row>div {
+    padding: 0;
 }
 
-.form-contact input{
-    width : 80%;
-    height : 60px;
-    padding : 5px;
-    margin-bottom : 30px;
-}
-
-.form-contact textarea{
-    width:90%;
-    margin : 0 auto;
-    padding : 5px;
-    margin-top : 30px;
-    min-height : 40vh;
+.form-contact textarea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 30px;
+    min-height: 40vh;
     resize: none;
+}
+
+
+/* taille des input, media queries */
+
+@media (max-width: 768px) {
+    .form-contact .container>.row>div:nth-child(2) {
+        text-align: left !important;
+    }
+    .form-contact input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-contact .container>.row>div:nth-child(2) {
+        text-align: right !important;
+    }
+    .form-contact input {
+        width: 80%;
+    }
+}
+
+.form-contact a.see-all {
+    background-color: #4A89AA;
+    color: white;
 }
