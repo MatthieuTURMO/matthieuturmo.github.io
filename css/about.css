@@ -1,0 +1,23 @@
+.title {
+    color: #666666;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.divider {
+    background-color: #4A89AA;
+}
+
+.progress-bar {
+    transition: all 2s ease-in;
+}
+
+.progress-bar{
+    background-color: red;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
