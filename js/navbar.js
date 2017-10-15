@@ -9,23 +9,39 @@ $('.navbar-collapse').on('hidden.bs.collapse', function () {
 });
 
 // quand on clique sur le burger, quand la fenetre est petite
+// ca toggle le sidenav
 $('.burger').on('click', function () {
-    toggleClass('.sidenav', 'show', 'hidden');
-    disableScroll();
+    if ($('.burger').hasClass('cross')) {
+        closeSideNav();
+    } else {
+        openSideNav();
+    }
 });
 
 $('.overlay-nav').on('click', function () {
-    enableScroll();
-    toggleClass('.sidenav', 'hidden', 'show');
+    closeSideNav();
 });
 
 $(window).resize(function () {
     var windowWidth = window.innerWidth
     if (windowWidth >= 650) {
-        toggleClass('.sidenav', 'hidden', 'show');
-        enableScroll();
+        closeSideNav();
     }
 });
+
+// ouvre le sidenav
+function openSideNav() {
+    toggleClass('.sidenav', 'show', 'hidden');
+    toggleClass('.burger', 'cross', 'collapsed');
+    disableScroll();
+}
+
+// ferme le sidenav
+function closeSideNav() {
+    toggleClass('.sidenav', 'hidden', 'show');
+    toggleClass('.burger', 'collapsed', 'cross');
+    enableScroll();
+}
 
 // ajoute classToAdd et delete classToRemove du composant selector
 function toggleClass(selector, classToAdd, classToRemove) {
