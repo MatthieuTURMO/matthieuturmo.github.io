@@ -33,8 +33,11 @@ function setProgressBar(windowHeight, scrollTopLevel, offset, selector) {
     var positionSkillsTop = positionSkills.top;
     // si le niveau de scroll est supérieur, on met à jour les progress bar
     if (positionBottomScreen >= positionSkillsTop+offset) {
-        var finalWidth = $('.progress-bar').attr('finalWidth');
-        $('.progress-bar').css('width', finalWidth);
+        // on récupère toutes les progress bar
+        $('.progress-bar').each(function( index ){
+            var finalWidth = $(this).attr('finalWidth');
+            $(this).css('width', finalWidth);
+        });
     }
 };
 

@@ -100,3 +100,15 @@ projet:nth-child(even) table tr td:nth-child(2) {
     color: white;
     padding: 5px;
 }
+
+
+.test {
+    height: 100%;
+    width: 100%;
+    background: url('../images/lol.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    /* background-attachment: fixed; */
+    position: relative;
+}

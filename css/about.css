@@ -8,16 +8,88 @@
     background-color: #4A89AA;
 }
 
-.progress-bar {
-    transition: all 2s ease-in;
-}
-
-.progress-bar{
-    background-color: red;
+.subtitle,
+.subsubtitle,
+.title-progress {
+    font-weight: bold;
+    color: #666666;
 }
 
 .subtitle {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    position: relative;
+}
+
+.subtitle:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background-color: #B84045;
+    top: 50%;
+    bottom: 50%;
+    left: -80px;
+}
+
+.subsubtitle {
+    font-size: 1.1em;
     margin-top: 10px;
+}
+
+.margin-top-50 {
+    margin-top: 90px;
+}
+
+* {
+    text-align: justify;
+}
+
+.few-words img {
+    float: right;
+    max-height: 100%;
+}
+
+#skills .progress-col .progress-bar {
+    transition: all 1s ease-in;
+}
+
+#skills .progress-col {
+    margin-bottom: 15px;
+}
+
+#skills .progress-col:nth-child(3n+3) .progress-bar {
+    background-color: #4A89AA;
+}
+
+#skills .progress-col:nth-child(3n+1) .progress-bar {
+    background-color: #21374B;
+}
+
+#skills .progress-col:nth-child(3n+2) .progress-bar {
+    background-color: #BE4248;
+}
+
+#studies .diploma img {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#studies .diploma .description{
+    margin-top : 5px;
+    text-align: justify;
+}
+
+#studies .diploma .subsubtitle{
+    width:100%;
+    text-align:center;
+}
+
+#studies > .row > div {
+    padding : 30px;
+    padding-top : 0;
 }
