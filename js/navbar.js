@@ -50,15 +50,15 @@ function toggleClass(selector, classToAdd, classToRemove) {
 }
 
 function disableScroll() {
-    $('html, body').css({
-        overflow: 'hidden',
+    $('body').css({
+        'overflow-y': 'hidden',
         height: '100%'
     });
 }
 
 function enableScroll() {
-    $('html, body').css({
-        overflow: 'auto',
+    $('body').css({
+        'overflow-y': 'auto',
         height: 'auto'
     });
 }

@@ -203,6 +203,17 @@
     }
 }
 
+/* très petit écran pour voir la croix pour fermer la sidenav */
+@media (max-width: 275px) {
+    .sidenav.show{
+        width:180px;
+        left: 0;
+    }
+    .burger.cross {
+        left: 185px;
+    }
+}
+
 
 /* grand écran : top menu */
 

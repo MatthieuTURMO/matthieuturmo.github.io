@@ -10,6 +10,10 @@ body {
     height: 100%;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 div.image-background {
     min-height: 100vh;
     height: 100vh;
@@ -48,6 +52,14 @@ div.image-background .caption #start {
     font-weight: bold;
     margin : 0 auto;
     margin-top : 50px;
+}
+
+
+/* taille des textes media */
+@media (max-width: 215px){
+    .title{
+        font-size:30px !important;
+    } 
 }
 
 .divider{

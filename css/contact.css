@@ -1,3 +1,4 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .title {
     color: #666666;
     margin-top: 100px;
@@ -14,6 +15,19 @@
     text-align: center;
 }
 
+.social>.container-fluid .logo {
+    color: white;
+    font-size: 150px;
+    line-height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.social>.container-fluid .logo>i {
+    margin: 0 auto;
+}
+
 .social>.container-fluid>.row div {
     color: white;
     text-align: center;
@@ -22,9 +36,71 @@
 
 .social>.container-fluid>.row>div {
     padding: 20px;
+    position: relative;
 }
 
-.social>.container-fluid>.row>div img,
+.social>.container-fluid>.row>div>.icon {
+    transition: all .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social>.container-fluid>.row>div:hover>.icon {
+    opacity: 1;
+}
+
+.social>.container-fluid>.row>div>.icon a i {
+    margin: 5px;
+    display: block;
+    border-radius: 70px;
+    font-size: 30px;
+    /* font-size: 23.52941176px; */
+    line-height: 70px;
+    width: 70px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #21374B;
+    z-index: 1000;
+}
+
+.social>.container-fluid>.row>div>.icon a i:hover {
+    font-size: 40px;
+    line-height: 75px;
+    width: 75px;
+    background-color: #21374B;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.social>.container-fluid>.row>div:before,
+.social>.container-fluid>.row>div>.icon * {
+    transition: all .3s ease;
+}
+
+.social>.container-fluid>.row>div:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    height: 100%;
+}
+
+.social>.container-fluid>.row>div:hover:before {
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.social>.container-fluid>.row>div logo,
 .social>.container-fluid>.row>div span {
     margin: 0 auto;
 }
@@ -51,7 +127,7 @@
     background-attachment: fixed;
     width: 100%;
     position: relative;
-    padding-top : 50px;
+    padding-top: 65px;
 }
 
 .form-contact .row {
@@ -81,6 +157,16 @@
     resize: none;
 }
 
+.form-contact a.see-all {
+    background-color: #4A89AA;
+    color: white;
+    margin-bottom: 0 !important;
+}
+
+.form-contact .row.see-all {
+    margin-bottom: 0;
+}
+
 
 /* taille des input, media queries */
 
@@ -102,7 +188,24 @@
     }
 }
 
-.form-contact a.see-all {
-    background-color: #4A89AA;
-    color: white;
+
+/* taille des textes media */
+
+@media (max-width: 950px) {
+    .social>.container-fluid .link>span {
+        font-size: 80% !important;
+    }
+}
+
+
+/* taille des textes media */
+
+@media (max-width: 215px) {
+    .social>.container-fluid .link>span {
+        font-size: 60% !important;
+    }
+    .social>.container-fluid .logo {
+        font-size: 90px;
+        line-height: 90px;
+    }
 }
