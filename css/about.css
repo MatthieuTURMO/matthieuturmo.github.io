@@ -49,8 +49,16 @@
 }
 
 .few-words img {
-    float: right;
-    max-height: 100%;
+   height : auto;
+   border-radius : 100%;
+   width : 100%;
+   max-height: 250px;
+   max-width: 250px;
+   margin: 0 auto;
+}
+
+.few-words .row > div:nth-child(2){
+    text-align: center !important;
 }
 
 #skills .progress-col .progress-bar {

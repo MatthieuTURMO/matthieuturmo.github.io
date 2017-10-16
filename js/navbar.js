@@ -32,14 +32,14 @@ $(window).resize(function () {
 // ouvre le sidenav
 function openSideNav() {
     toggleClass('.sidenav', 'show', 'hidden');
-    toggleClass('.burger', 'cross', 'collapsed');
+    toggleClass('.burger', 'cross', '');
     disableScroll();
 }
 
 // ferme le sidenav
 function closeSideNav() {
     toggleClass('.sidenav', 'hidden', 'show');
-    toggleClass('.burger', 'collapsed', 'cross');
+    toggleClass('.burger', '', 'cross');
     enableScroll();
 }
 
