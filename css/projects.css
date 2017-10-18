@@ -40,6 +40,7 @@
 
 .projet:nth-child(odd) table tr td:nth-child(1) {
     width: 40%;
+    padding:0;
 }
 
 .projet:nth-child(odd) table tr td:nth-child(2) {
@@ -51,8 +52,9 @@
     text-align: right;
 }
 
-projet:nth-child(even) table tr td:nth-child(2) {
+.projet:nth-child(even) table tr td:nth-child(2) {
     width: 40%;
+    padding:0;
 }
 
 .projet:nth-child(3n+3) {
