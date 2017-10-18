@@ -1,14 +1,60 @@
-.card {
-    margin : 10px auto;
-    border: 1px solid grey;
+.carte {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 4px 16px 0px black;
+    height:500px;;
 }
 
-.card-block{
-    padding : 20px;
-    
+.carte .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 70%;
+}
+
+.carte .infos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30%;
+}
+
+.carte .img>img {
+    width: 100%;
+    height: auto;
+}
+
+.row div.col-sm-12:nth-child(1) .img,
+.row div.col-sm-12:nth-child(3) .img{
+    background: url('../images/lol.jpg');  
+    background-size: cover;
+    background-position: center;
+}
+
+.row div.col-sm-12:nth-child(2) .img{
+    background: url('../images/diplome.png') no-repeat;   
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%; 
 }
 
 
-.card-title {
-    margin-top : 10px;
+.carte .text {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.carte .goto>a {
+    background-color: #4A89AA;
+    color: white;
+    font-size: 1.1em;
+    padding: 0.7em 2em;
+}
+
+.carte .goto>a:hover {
+    text-decoration: none;
 }

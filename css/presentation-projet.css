@@ -1,18 +1,25 @@
 .presentation-projet {
     background-color: white;
-    padding : 50px 0;
-    width : 100%;
+    width: 100%;
 }
 
 .presentation-projet .title {
-    color: #676767;
+    color: 676767;
 }
 
 .presentation-projet .divider {
-    background-color: #4C8AAB;    
+    background-color: 4C8AAB;
 }
 
-.presentation-projet a.see-all{
-    background-color: #4A89AA;
+.presentation-projet a.see-all {
+    background-color: 4A89AA;
     color: white;
+}
+
+.presentation-projet>.container>.row>.col>.row>div {
+    margin-bottom:15px;
+}
+
+projets {
+    padding-top: 50px;
 }
