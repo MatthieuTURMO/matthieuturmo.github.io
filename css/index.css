@@ -17,7 +17,7 @@ body{
 div.image-background {
     min-height: 100vh;
     height: 100vh;
-    background: url('../images/background1.jpeg') no-repeat;
+    background: url('../images/lol.jpg') no-repeat;
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
