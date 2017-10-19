@@ -15,6 +15,16 @@ $(document).scroll(function () {
     }
 });
 
+$(document).ready(function(){
+    $('.material_ripple').material_ripple();    
+});
+
+// click sur un material ripple
+$('a.material_ripple').on('click', function(){
+    var href = $('a.material_ripple').attr('href');
+    window.location.replace(href);
+});
+
 // fonction qui scroll jusqu'à la barre de navigation
 $('#start').on('click', function () {
     var page = $(this).attr('href');

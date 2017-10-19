@@ -69,8 +69,18 @@ div.image-background .caption #start {
     margin-bottom: 50px;
 }
 
-a.see-all{
-    padding : 15px 70px;
+a.material_ripple{
     margin : 20px auto;
-    font-size: 1.5em;
+    line-height: 70px;
+    height: 70px;
+    padding: 0 70px;
+    font-size : 23px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all .3s ease;
+}
+
+a.material_ripple:hover {
+    text-decoration: none;
+    color : white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
