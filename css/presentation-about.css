@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+.presentation-about > .row{
+    margin-top : 17px;
+}
+
 .presentation-about .title {
     color: white;
 }
