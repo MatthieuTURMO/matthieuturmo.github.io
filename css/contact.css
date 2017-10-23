@@ -37,7 +37,17 @@
 .social>.container-fluid>.row>div {
     padding: 20px;
     position: relative;
+    opacity:0;
+    transition: opacity .7s ease;
 }
+
+.social>.container-fluid>.row>div:nth-child(2){
+    transition-delay: .5s;
+}
+.social>.container-fluid>.row>div:nth-child(3){
+    transition-delay: 1s;
+}
+
 
 .social>.container-fluid>.row>div>.icon {
     transition: all .3s ease;
@@ -147,8 +157,7 @@
 }
 
 .form-contact {
-    min-height: 100vh;
-    height: 100vh;
+    height : calc(100vh - 60px);
     background: url('../images/lol.jpg') no-repeat;
     background-size: cover;
     background-position-x: 50%;
@@ -156,7 +165,6 @@
     background-attachment: fixed;
     width: 100%;
     position: relative;
-    padding-top: 100px;
 }
 
 .form-contact>.container {
@@ -228,7 +236,7 @@
     }
 }
 
-@media (max-height: 450px) {
+@media (max-height: 500px) {
     .form-contact {
         height: 150vh;
     }
