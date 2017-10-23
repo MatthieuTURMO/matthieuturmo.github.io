@@ -70,27 +70,32 @@
 
 .social>.container-fluid>.row>div:nth-child(1)>.icon a i {
     color: #21374B;
-    background-color: #ffffff;  
+    background-color: #ffffff;
 }
+
 .social>.container-fluid>.row>div:nth-child(2)>.icon a i {
     color: #BE4248;
-    background-color: #ffffff;  
+    background-color: #ffffff;
 }
+
 .social>.container-fluid>.row>div:nth-child(3)>.icon a i {
     color: #4A89AA;
-    background-color: #ffffff;  
+    background-color: #ffffff;
 }
+
 .social>.container-fluid>.row>div:nth-child(1)>.icon a i:hover {
     color: #ffffff;
     background-color: #21374B;
 }
+
 .social>.container-fluid>.row>div:nth-child(2)>.icon a i:hover {
     color: #ffffff;
-    background-color: #BE4248;  
+    background-color: #BE4248;
 }
+
 .social>.container-fluid>.row>div:nth-child(3)>.icon a i:hover {
     color: #ffffff;
-    background-color: #4A89AA;  
+    background-color: #4A89AA;
 }
 
 .social>.container-fluid>.row>div>.icon a i:hover {
@@ -108,19 +113,20 @@
 }
 
 .social>.container-fluid>.row>div:before {
-    content: "";
     position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    content: '';
     background-color: black;
     opacity: 0;
-    height: 100%;
+    transform:scale(0.1);
 }
 
 .social>.container-fluid>.row>div:hover:before {
     opacity: 0.8;
-    transform: scale(0.95);
+    transform:scale(1);
 }
 
 .social>.container-fluid>.row>div logo,
@@ -150,7 +156,15 @@
     background-attachment: fixed;
     width: 100%;
     position: relative;
-    padding-top: 65px;
+    padding-top: 100px;
+}
+
+.form-contact>.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
 }
 
 .form-contact .row {
@@ -176,7 +190,7 @@
     margin: 0 auto;
     padding: 5px;
     margin-top: 30px;
-    min-height: 40vh;
+    min-height: 30vh;
     resize: none;
 }
 
@@ -200,6 +214,9 @@
     .form-contact input {
         width: 100%;
     }
+    .form-contact textarea {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -208,6 +225,24 @@
     }
     .form-contact input {
         width: 80%;
+    }
+}
+
+@media (max-height: 450px) {
+    .form-contact {
+        height: 150vh;
+    }
+}
+
+@media (max-height: 280px) {
+    .form-contact input {
+        margin-bottom: 5px;
+    }
+    .form-contact a {
+        margin: 0 auto;
+    }
+    .form-contact {
+        padding-top: 0;
     }
 }
 

@@ -18,6 +18,10 @@ body{
     overflow-x: hidden;
 }
 
+body > *{
+    overflow-x:hidden;
+}
+
 @media handheld{
     html {
         overflow-x:hidden;
