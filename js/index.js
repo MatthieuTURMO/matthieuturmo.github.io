@@ -15,12 +15,12 @@ $(document).scroll(function () {
     }
 });
 
-$(document).ready(function(){
-    $('.material_ripple').material_ripple();    
+$(document).ready(function () {
+    $('.material_ripple').material_ripple();
 });
 
 // click sur un material ripple
-$('a.material_ripple').on('click', function(){
+$('a.material_ripple').on('click', function () {
     var href = $('a.material_ripple').attr('href');
     window.location.replace(href);
 });

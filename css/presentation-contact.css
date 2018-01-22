@@ -9,7 +9,7 @@
 }
 
 .presentation-contact .divider {
-    background-color: white;
+    background-color: #396783;
 }
 
 .presentation-contact a.see-all {
@@ -28,5 +28,11 @@
 }
 
 .presentation-contact .text-contact a {
-    color: grey;
+    color: #b9b5b5;
+    transition : all .2s ease;
+}
+
+.presentation-contact .text-contact a:hover{
+    color : white;
+    text-decoration: none;
 }
