@@ -1,4 +1,14 @@
 .navbar,
+.replace-topmenu
+{
+    transition : top .3s ease;
+}
+
+.burger {
+    transition: top .2s ease;
+}
+
+.navbar,
 .replace-topmenu {
     height: 60px;
     position: fixed;
@@ -108,6 +118,7 @@
 
 .burger.cross {
     left: 255px;
+    height: 20px;
 }
 
 .burger.cross>div:nth-child(2) {

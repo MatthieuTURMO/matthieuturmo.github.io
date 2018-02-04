@@ -34,7 +34,7 @@
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 10px;
-    color : #666666;
+    color: #666666;
 }
 
 .images {
@@ -56,22 +56,65 @@
 .boutons .row .col {
     padding: 30px;
     position: relative;
+    cursor: pointer;
 }
 
 .boutons .row .col .chevron {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size : 4em;
-    cursor: pointer;
+    font-size: 4em;
 }
 
-.boutons>.row>.col:nth-child(odd) .chevron{
-    left : 50px;
+.boutons>.row>.col:nth-child(odd) .chevron {
+    left: 50px;
 }
 
-.boutons>.row>.col:nth-child(even) .chevron{
-    right : 50px;
+.boutons>.row>.col .chevron div {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.boutons>.row>.col:nth-child(even) .chevron div:nth-child(1) {
+    transform: rotateZ(45deg) translateX(-9px);
+    transition: all .2s ease;
+}
+
+.boutons>.row>.col:nth-child(even) .chevron div:nth-child(2) {
+    transform: rotateZ(-45deg) translateX(-9px);
+    transition: all .2s ease;
+}
+
+.boutons>.row>.col:nth-child(even):hover .chevron div:nth-child(1) {
+    transform: rotateZ(19deg) translateX(-9px);
+}
+
+.boutons>.row>.col:nth-child(even):hover .chevron div:nth-child(2) {
+    transform: rotateZ(-19deg) translateX(-9px) translateY(-2px);
+}
+
+.boutons>.row>.col:nth-child(odd) .chevron div:nth-child(1) {
+    transform: rotateZ(-45deg) translateX(9px);
+    transition: all .2s ease;
+}
+
+.boutons>.row>.col:nth-child(odd) .chevron div:nth-child(2) {
+    transform: rotateZ(45deg) translateX(9px);
+    transition: all .2s ease;
+}
+
+.boutons>.row>.col:nth-child(odd):hover .chevron div:nth-child(1) {
+    transform: rotateZ(-19deg) translateX(9px);
+}
+
+.boutons>.row>.col:nth-child(odd):hover .chevron div:nth-child(2) {
+    transform: rotateZ(19deg) translateX(9px) translateY(-2px);
+}
+
+.boutons>.row>.col:nth-child(even) .chevron {
+    right: 50px;
 }
 
 .boutons>.row>.col:nth-child(odd) {
@@ -84,4 +127,10 @@
     background-color: #4A89AA;
     text-align: right;
     padding-right: 150px;
+}
+
+@media (max-width: 768px) {
+    img {
+        margin-bottom: 10px;
+    }
 }

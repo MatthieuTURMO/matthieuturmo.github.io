@@ -4,8 +4,8 @@
     font-family: 'Open Sans', serif;
 }
 
-.container{
-    max-width : 850px !important;
+.container {
+    max-width: 850px !important;
 }
 
 html,
@@ -14,17 +14,17 @@ body {
     height: 100%;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-body > *{
-    overflow-x:hidden;
+body>* {
+    overflow-x: hidden;
 }
 
-@media handheld{
+@media handheld {
     html {
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -43,63 +43,78 @@ div.image-background {
 div.image-background .caption {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    bottom: 30px;
     left: 0;
-    height: 100px;
-    width: 100%;
+    right: 0;
+    font-size : 60px;
     color: white;
+    transform: rotate(50%);
 }
 
 div.image-background .caption #start {
-    background-color: grey;
-    opacity : 0.8;
-    margin-right : 0;
+    /* margin-right: 0;
     text-transform: uppercase;
     border-radius: 2px;
     font-size: 50px;
-    padding: 15px;
+    padding: 15px; */
 }
 
-.title{
+div.image-background .welcome{
+    position: absolute;
+    top: 10%;
+    left : 5%;
+    color: white;
+    font-size : 3em;
+}
+
+.welcome .red,
+.welcome #typed{
+    color: #BE4248;
+}
+
+
+.title {
     font-size: 50px;
     letter-spacing: 3px;
     font-weight: bold;
-    margin : 0 auto;
-    margin-top : 50px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 
 /* taille des textes media */
-@media (max-width: 215px){
-    .title{
-        font-size:30px !important;
-    } 
+
+@media (max-width: 215px) {
+    .title {
+        font-size: 30px !important;
+    }
 }
 
-.divider{
+.divider {
     height: 5px;
     width: 15%;
     margin: 5px auto;
     margin-bottom: 50px;
 }
 
-a.material_ripple{
-    margin : 20px auto;
-    line-height: 70px;
-    height: 70px;
-    padding: 0 70px;
-    font-size : 23px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+a.material_ripple {
+    margin: 20px auto;
+    margin-bottom: 0;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 17px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transition: all .3s ease;
 }
 
 a.material_ripple:hover {
     text-decoration: none;
-    color : white;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .center-div {
-    margin : 0 auto;
-    height:auto;
+    margin: 0 auto;
+    height: auto;
 }

@@ -149,7 +149,7 @@ figure.proSnip.hover figcaption {
     height: fit-content;
 }
 
-.tags {
+.tags-home {
     text-align: left;
     margin: 0;
     font-size: 12px;
@@ -159,7 +159,7 @@ figure.proSnip.hover figcaption {
     color: #000000;
 }
 
-.tags > p {
+.tags-home > p {
     background-color: #ffffff;
     text-align: center;
     padding: 4px;

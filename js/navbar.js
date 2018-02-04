@@ -62,3 +62,25 @@ function enableScroll() {
         height: 'auto'
     });
 }
+
+var lastScrollTop = 0;
+$(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+    toggleNavbar(lastScrollTop, scrollTop, function () {
+        lastScrollTop = scrollTop;
+    });
+});
+
+//affiche ou non la navbar en fonction de si on scroll vers le haut ou vers le bas
+function toggleNavbar(lastScrollTop, scrollTop, callback) {
+    if (lastScrollTop > scrollTop) {
+        $(".navbar").css('top', '0');
+        $(".replace-topmenu").css('top', '0');
+        $(".burger").css('top', '18.5px');
+    } else {
+        $(".navbar").css('top', '-60px');
+        $(".replace-topmenu").css('top', '-60px');
+        $(".burger").css('top', '-60px');
+    }
+    callback();
+}

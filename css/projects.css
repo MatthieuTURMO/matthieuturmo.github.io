@@ -102,7 +102,6 @@
     color: white;
     font-size: 1.1em;
     letter-spacing: -1px;
-    text-transform: uppercase;
     font-weight: bold;
     padding: 0 2px;
 }
@@ -114,11 +113,23 @@
     margin: 20px 0;
 }
 
-.text-projet a.see-more {
+/* .text-projet a.see-more {
     background-color: transparent;
     border: 2px solid white;
     color: white;
     padding: 5px;
+} */
+
+a.see-all {
+    background-color: white;
+    color: #b9b5b5;
+    margin-top: 0;
+}
+
+a.see-all:hover{
+    color: white;
+    background-color: #b9b5b5;
+    font-weight: bold;
 }
 
 .test {

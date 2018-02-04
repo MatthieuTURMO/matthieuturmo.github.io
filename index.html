@@ -19,8 +19,15 @@
 <body>
 
     <div class="image-background">
+        <div class="welcome">Matthieu Turmo
+            <span class="red">
+                <span id="typed"></span>
+            </span>
+        </div>
         <div class="caption text-center">
-            <span id="start" href="#projets">MT</span>
+            <span id="start" href="#projets">
+                >
+            </span>
         </div>
     </div>
 
@@ -28,7 +35,7 @@
         <div class="container-projets">
             <div class="row">
                 <div class="col text-center">
-                    <span class="title">Projects</span>
+                    <span class="title" id="title-projet">Projets</span>
                     <div class="divider"></div>
                     <div class="row">
                         <div class="col-lg-4 col-sm-12">
@@ -37,7 +44,7 @@
                                 <div class="title">
                                     <div>
                                         <h2>Portfolio</h2>
-                                        <div class="tags">
+                                        <div class="tags-home">
                                             <p>jQuery</p>
                                             <p>HTML</p>
                                             <p>CSS</p>
@@ -56,9 +63,9 @@
                                 <div class="title">
                                     <div>
                                         <h2>Koobe</h2>
-                                        <div class="tags">
+                                        <div class="tags-home">
                                             <p>Angular</p>
-                                            <p>NodeJS</p>
+                                            <p>Node.js</p>
                                         </div>
                                     </div>
                                 </div>
@@ -74,7 +81,7 @@
                                 <div class="title">
                                     <div>
                                         <h2>Hestia</h2>
-                                        <div class="tags">
+                                        <div class="tags-home">
                                             <p>Angular</p>
                                             <p>Symfony</p>
                                         </div>
@@ -91,7 +98,7 @@
             </div>
         </div>
         <div class="row">
-            <a class="material_ripple see-all" href="./html/projects.html">See more</a>
+            <a class="material_ripple see-all" href="./html/projects.html">Voir plus</a>
         </div>
     </div>
 
@@ -100,7 +107,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <span class="title">About</span>
+                    <span class="title">A propos</span>
                     <div class="divider"></div>
                 </div>
             </div>
@@ -109,14 +116,16 @@
                     <div class="center image-profil"></div>
                 </div>
                 <div class="col text-profil">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque, reprehenderit eligendi magnam modi voluptate exercitationem
-                    ullam impedit deleniti incidunt reiciendis id magni? Quam debitis et distinctio pariatur adipisci asperiores.
-
+                    <p>Jeune diplômé de l'ESIREM Dijon, école d'ingénieur en informatique et électronique, je me spécialise
+                        aujourd'hui sur des technologies web, notamment sur l'aspect front-end.</p>
+                    <p>Envie d'en savoir plus ?</p>
+                    <!-- Mes connaissances relativement diverses en programmation m'ont
+                    permis d'appréhender et d'apprécier également le Web Design et l'expérience utilisateur. -->
                 </div>
             </div>
         </div>
         <div class="row">
-            <a class="material_ripple see-all" href="./html/about.html">See more</a>
+            <a class="material_ripple see-all" href="./html/about.html">Voir plus</a>
         </div>
     </div>
 
@@ -130,8 +139,8 @@
             </div>
             <div class="row text-contact">
                 <div class="col">
-                    Want to talk ?
-                    <a id="contact-me" href="./html/contact.html">Contact me</a>
+                    Me joindre ?
+                    <a id="contact-me" href="./html/contact.html">Contactez-moi</a>
                 </div>
             </div>
         </div>
@@ -148,6 +157,7 @@
     crossorigin="anonymous"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/index.js"></script>
+<script src="./js/typed.min.js"></script>
 <script src="./js/navbar.js"></script>
 
 

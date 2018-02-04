@@ -16,8 +16,6 @@ function showProjet(windowHeight, scrollTopLevel, offset, selector) {
     var positionBottomScreen = windowHeight + scrollTopLevel;
     $(selector).each(function (index) {
         var positionProjet = $(this).offset().top;
-        console.log('bot', positionBottomScreen);
-        console.log('topdiv', positionProjet);
         if (positionBottomScreen >= positionProjet + offset) {
             $(this).animate({
                 opacity: '1'
