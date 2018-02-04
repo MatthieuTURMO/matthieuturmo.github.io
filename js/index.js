@@ -20,6 +20,12 @@ $(document).ready(function () {
     typedTitle();
 });
 
+$(document).scroll(function () {
+    var windowHeight = $(window).height();
+    var scrollTopLevel = $(document).scrollTop();
+    opacityImageBackground('.image-background', windowHeight, scrollTopLevel);
+});
+
 // click sur un material ripple
 $('a.material_ripple').on('click', function () {
     var href = $('a.material_ripple').attr('href');
@@ -51,8 +57,8 @@ function typedTitle() {
     var typed = new Typed('#typed', {
         strings: ["Développeur Web", "Ingénieur"],
         typeSpeed: 30,
-        backSpeed : 10,
-        backDelay : 1500,
+        backSpeed: 10,
+        backDelay: 1500,
         loop: true,
         cursorChar: '_',
         smartBackspace: false
