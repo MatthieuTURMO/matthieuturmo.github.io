@@ -90,6 +90,12 @@ div.image-background .welcome{
     }
 }
 
+@media (max-width: 576px) {
+    .image-profil {
+        margin-bottom: 10px;
+    }
+}
+
 .divider {
     height: 5px;
     width: 15%;
