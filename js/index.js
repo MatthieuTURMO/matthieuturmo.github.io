@@ -16,7 +16,6 @@
 // });
 
 $(document).ready(function () {
-    $('.material_ripple').material_ripple();
     typedTitle();
 });
 

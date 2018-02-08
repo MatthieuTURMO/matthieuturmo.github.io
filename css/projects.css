@@ -111,6 +111,7 @@
     margin: 20px 0;
 }
 
+
 /* .text-projet a.see-more {
     background-color: transparent;
     border: 2px solid white;
@@ -119,14 +120,15 @@
 } */
 
 a.see-all {
-    background-color: white;
-    color: #b9b5b5;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 0;
 }
 
-a.see-all:hover{
-    color: white;
-    background-color: #b9b5b5;
+a.see-all:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 28px rgba(0, 0, 0, 0.25), 0px 2px 10px rgba(0, 0, 0, 0.22);
     font-weight: bold;
 }
 
