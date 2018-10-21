@@ -43,11 +43,11 @@ div.image-background {
 div.image-background .caption {
     cursor: pointer;
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     left: 0;
     right: 0;
-    font-size : 60px;
-    color: white;
+    font-size: 60px;
+    color: transparent;
     transform: rotate(50%);
 }
 
@@ -59,19 +59,49 @@ div.image-background .caption #start {
     padding: 15px; */
 }
 
-div.image-background .welcome{
+#start {
+    cursor: pointer;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Chevron avec le click pour descendre */
+
+.start {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* right: 50%; */
+    border-radius: 3px;
+}
+
+#right {
+    transform: translateX(11px) translateY(-4px) rotate(-45deg);
+}
+
+#left {
+    transform: translateX(-9px) rotate(45deg);
+}
+
+div.image-background .welcome {
     position: absolute;
     top: 10%;
-    left : 5%;
+    left: 5%;
     color: white;
-    font-size : 3em;
+    font-size: 2em;
 }
 
 .welcome .red,
-.welcome #typed{
+.welcome #typed {
     color: #BE4248;
 }
-
 
 .title {
     font-size: 50px;
@@ -81,12 +111,20 @@ div.image-background .welcome{
     margin-top: 50px;
 }
 
-
 /* taille des textes media */
 
 @media (max-width: 215px) {
     .title {
         font-size: 30px !important;
+    }
+    div.image-background .welcome {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    div.image-background .welcome {
+        font-size: 1em;
     }
 }
 

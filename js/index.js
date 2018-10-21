@@ -23,6 +23,7 @@ $(document).scroll(function () {
     var windowHeight = $(window).height();
     var scrollTopLevel = $(document).scrollTop();
     opacityImageBackground('.image-background', windowHeight, scrollTopLevel);
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //opacité de la flèche
 });
 
 // click sur un material ripple
@@ -32,7 +33,7 @@ $('a.material_ripple').on('click', function () {
 });
 
 // fonction qui scroll jusqu'à la barre de navigation
-$('#start').on('click', function () {
+$('.arrow').on('click', function () {
     var page = $(this).attr('href');
     var speed = 1000;
     $('html, body').animate({
@@ -54,7 +55,7 @@ function opacityImageBackground(selector, windowHeight, scrollTopLevel) {
 
 function typedTitle() {
     var typed = new Typed('#typed', {
-        strings: ["Développeur Web", "Ingénieur"],
+        strings: ["Développeur web", "Ingénieur"],
         typeSpeed: 30,
         backSpeed: 10,
         backDelay: 1500,
