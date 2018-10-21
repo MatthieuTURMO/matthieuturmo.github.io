@@ -17,6 +17,8 @@
 
 $(document).ready(function () {
     typedTitle();
+    var windowWidth = $(window).width();
+    addHoverToCards(windowWidth, "figure.proSnip, figure.proSnip *");
 });
 
 $(document).scroll(function () {
@@ -25,6 +27,12 @@ $(document).scroll(function () {
     opacityImageBackground('.image-background', windowHeight, scrollTopLevel);
     opacityImageBackground('.arrow', windowHeight, scrollTopLevel);
     // $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //opacité de la flèche
+});
+
+$(window).on('resize', function () {
+    var windowWidth = $(window).width();
+    console.log('mdr', windowWidth);
+    addHoverToCards(windowWidth, "figure.proSnip, figure.proSnip *");
 });
 
 // click sur un material ripple
@@ -64,4 +72,13 @@ function typedTitle() {
         cursorChar: '_',
         smartBackspace: false
     });
+}
+
+function addHoverToCards(windowWidth, selectors) {
+    if (windowWidth < 600) {
+        $(selectors).addClass('hover');
+    }
+    else {
+        $(selectors).removeClass('hover');
+    }
 }
