@@ -23,7 +23,8 @@ $(document).scroll(function () {
     var windowHeight = $(window).height();
     var scrollTopLevel = $(document).scrollTop();
     opacityImageBackground('.image-background', windowHeight, scrollTopLevel);
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //opacité de la flèche
+    opacityImageBackground('.arrow', windowHeight, scrollTopLevel);
+    // $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //opacité de la flèche
 });
 
 // click sur un material ripple
